@@ -15,12 +15,12 @@ export default function Header() {
       {/* top nav */}
       <div className="bg-amazon_blue h-14 flex items-center justify-between p-1 flex-grow py-2">
         <div className="flex items-center flex-grow sm:flex-grow-0">
-          <img
-            onClick={() => router.push("/")}
-            className="w-28 items-center ml-4 flex pt-3 object-cover cursor-pointer"
-            src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
-            alt=""
-          />
+        <img
+  onClick={() => router.push("/")}
+  className="w-28 items-center ml-4 flex pt-3 object-cover cursor-pointer logo"
+  src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+  alt=""
+/>
         </div>
 
         {/*search*/}
@@ -50,11 +50,9 @@ export default function Header() {
             <h3 className="text-[10px] sm:text-sm  font-bold">& Orders</h3>
           </div>
           <div onClick={() => router.push("/checkout")}  className="flex cursor-pointer items-center">
-            <span className="sm:text-base text-xs">{items.length}</span>
-         <AiOutlineShoppingCart className="  text-2xl sm:text-3xl md:text-4xl relative"/>
-          <h3 className="text-[10px] sm:text-sm  font-bold">
-          Cart
-          </h3>
+          <span className="sm:text-base text-xs absolute -top-[1px] right-9 bg-red-600 text-white font-bold rounded-full h-5 w-5 flex items-center justify-center">{items.length}</span>
+<AiOutlineShoppingCart className="text-2xl sm:text-3xl md:text-4xl relative" />
+<h3 className="text-[10px] sm:text-sm font-bold mt-1">Cart</h3>
          </div>
         </div>
               {/* bottom nav */}

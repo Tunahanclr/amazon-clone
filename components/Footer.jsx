@@ -30,7 +30,6 @@ export default function Footer() {
       </div> 
       <div className="space-y-4">
           <h3 className="text-lg font-semibold text-white">Let Us Help You</h3>
-          <a href="#" className="block text-gray-300 hover:text-white">Amazon and COVID-19</a>
           <a href="#" className="block text-gray-300 hover:text-white">Your Account</a>
           <a href="#" className="block text-gray-300 hover:text-white">Your Orders</a>
           <a href="#" className="block text-gray-300 hover:text-white">Shipping Rates & Policies</a>

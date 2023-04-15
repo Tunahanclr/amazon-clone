@@ -10,7 +10,7 @@ dispatch(addToBasket(product))
     <div className="relative flex flex-col h-[450px] m-5 bg-white z-30 p-10">
       <p className="absolute top-2 right-2 italic text-xs text-gray-400">{product.category}</p>
       <div className="flex items-center justify-center">
-       <a href="/ProductDetail"> <img src={product.image} className="w-[245px] h-[145px] sm:w-[250px] sm:h-[145px] object-contain" alt="" /></a>
+       <a> <img src={product.image} className="w-[245px] h-[145px] sm:w-[250px] sm:h-[145px] object-contain" alt="" /></a>
       </div>
       <h4 className="my-3 text-sm sm:text-base">{product.title}</h4>
       <div className="flex">
