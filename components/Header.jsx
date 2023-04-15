@@ -41,7 +41,7 @@ export default function Header() {
         <div className="flex text-white ml-10 gap-5 sm:gap-12 whitespace-nowrap pr-5 items-center">
           <div onClick={signIn} className="flex cursor-pointer flex-col items-center">
             <span className="text-xs font-medium">
-              {session ? `Hello, ${session.user.name}` : "Hello, sign in"}
+             {session ? `Hello, ${session.user.name}` : "Hello, sign in"} 
             </span>
             <h3 className=" text-[10px] sm:text-sm font-bold">Account & Lists</h3>
           </div>
