@@ -6,21 +6,51 @@ import Image from 'next/image';
 export default function Banner() {
   return (
     <div className='relative'>
-        <Carousel
-        autoPlay
-        infiniteLoop
-        showStatus={false}
-        showIndicators={false}
-        showThumbs={false}
-        interval={5000}
-        >
-<div><img loading='lazy' src='https://m.media-amazon.com/images/I/71tIrZqybrL._SX3000_.jpg' alt='' /></div>
-<div><img loading='lazy' src='https://m.media-amazon.com/images/I/61TD5JLGhIL._SX3000_.jpg' alt='' /></div>
-<div><img loading='lazy' src='https://m.media-amazon.com/images/I/61jovjd+f9L._SX3000_.jpg' alt='' /></div>
-<div><img loading='lazy' src='https://m.media-amazon.com/images/I/61DUO0NqyyL._SX3000_.jpg' alt='' /></div>
-
-
-        </Carousel>
+      <Carousel
+  autoPlay
+  infiniteLoop
+  showStatus={false}
+  showIndicators={false}
+  showThumbs={false}
+  interval={5000}
+>
+  <div>
+    <Image
+      src="/assets/banner1.jpg"
+      alt=""
+      width={3000}
+      height={600}
+      loading="lazy"
+    />
+  </div>
+  <div>
+    <Image
+      src="/assets/banner2.jpg"
+      alt=""
+      width={3000}
+      height={600}
+      loading="lazy"
+    />
+  </div>
+  <div>
+    <Image
+      src="/assets/banner3.jpg"
+      alt=""
+      width={3000}
+      height={600}
+      loading="lazy"
+    />
+  </div>
+  <div>
+    <Image
+      src="/assets/banner4.jpg"
+      alt=""
+      width={3000}
+      height={600}
+      loading="lazy"
+    />
+  </div>
+</Carousel>
     </div>
   )
 }

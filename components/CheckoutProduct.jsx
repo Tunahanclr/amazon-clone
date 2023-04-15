@@ -22,7 +22,7 @@ export default function CheckoutProduct({ item }) {
         alt=""
       />
       <div className="col-span-3 mx-5">
-        <p>{item.title}</p>
+      <p>{item.title.replace("'", "&rsquo;")}</p>
         <div className="flex mb-4">
           <Star />
         </div>
